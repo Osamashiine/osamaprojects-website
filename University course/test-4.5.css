@@ -1,0 +1,59 @@
+
+.name {
+		font-family: Arial;
+		font-size: 30px;
+		color: blueviolet;
+
+		
+	}
+
+#somalia {
+	font-family: tahoma;
+	font-size: 40px;
+	font-weight: bold;
+	color: blue;
+
+}
+.faculty {
+	font-family: arial;
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+
+}
+header {
+	display: flex;
+	height: 60px;
+	background-color: red;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+img {
+	height: 500px;
+	width: 400px;
+	object-fit: contain;
+}
+
+div {
+	height: 80px;
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#id-selector {
+	font-size: 20px;
+	color: lightgreen;
+	background-color: gray;
+}
+.class-selector {
+	color:lightslategray;
+	background-color: antiquewhite;
+}
