@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Exercise section-2</title>
+
+<style>
+	p {
+		font-family: arial;
+		line-height: 8px;
+		font-size: 20px;
+	}
+	div {
+		font-family: arial;
+	}
+	.name {
+		font-weight: bold;
+	}
+	.animal,.popular {
+		color: gray;
+	}
+	.profile-div {
+		display: inline-block;
+		margin-right: 10px;
+	}
+		
+	.profile-photo{
+		width: 70px;
+		height:70px;
+		object-fit: cover;
+		border-radius: 50px;
+		margin-top: 15px;
+		margin-left: 10px;
+	}
+	.profile-note {
+		display: inline-block;
+		width: 250px;
+		vertical-align: top;
+	}
+	.button-div {
+		display: inline-block;
+		vertical-align: top;
+		margin-top:35px ;
+	}
+	.follow-button {
+		background-color: rgb(29,155, 240);
+		border: none;
+		border-radius: 5px;
+		color: white;
+		font-weight: bold;
+		font-size: 16px;
+		padding-top: 10px;
+		padding-bottom:10px;
+		padding-right: 20px;
+		padding-left: 20px;
+		cursor: pointer;
+	}
+	.page-grid {
+		display: grid;
+		grid-template-columns: 200px 200px 200px;
+		column-gap: 20px;
+	}
+	.profile-divv {
+		width: 200px;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0,0.3);
+		margin-bottom: 10px;
+	}
+	.profile-picture {
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+		object-position: center;
+		margin-bottom: 12px;
+
+	}
+	.name {
+		font-family: arial;
+		font-size: 18px;
+		font-weight: bold;
+		margin-top: 0px;
+		margin-left: 8px;
+		margin-bottom: 10px;
+
+	}
+	.mutual-friends-row {
+		display: grid;
+		grid-template-columns: 35px 1fr;
+		align-items: center;
+		margin-left: 8px;
+		margin-bottom: 10px;
+	}
+	.mutual-friend-picture {
+		width: 28px;
+		height: 28px;
+		border-radius: 14px;
+		object-fit: cover;
+		object-position: center;
+		vertical-align: middle;
+		margin-right: 4px;
+
+	}
+	.mutual-friends {
+		font-size: 16px;
+		color: rgb(100, 100, 100);
+	}
+	.add-friend {
+		background-color: rgb(24,119,242);
+		color: white;
+		font-size: 16px;
+		border: none;
+		border-radius: 4px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-top: 0px;
+		margin-left: 8px;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+	.container-flexbox {
+		width: 300px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: gray;
+		border-radius: 6px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-right: 6px;
+		padding-left: 6px;
+	}
+	.flexbox {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	.notifications {
+		background-color: rgb(49,109,245);
+		color: white;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 20px;
+		font-weight: bold;
+
+	}
+	.div-header {
+		background-color:rgb(120, 82,178);
+		color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.home-link {
+		font-weight: bold;
+	}
+	.text-box {
+		width: 500px;
+		border: none;
+		border-radius:15px;
+		margin-top: 12px;
+		margin-bottom: 12px;
+		height: 30px;
+		padding-left: 20px;
+		padding-right: 15px;
+	}
+	.download-button {
+		background-color:rgb(120, 82,178);
+		color: white;
+		border-width: 1px;
+		border-style: solid;
+		border-color: white;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 15px;
+		padding-left: 15px;
+		cursor: pointer;
+
+	}
+</style>
+</head>
+<body>
+<center><p>lesson 10 exercise</p></center>
+10.a
+<div class="container">
+	<div class="profile-div">
+		<img class="profile-photo" src="../thumbnails/cat.jpg">
+	</div>
+	<div class="profile-note">
+		<div class="name"><p>oliver</p></div>
+		<div class="animal"><p>the cat</p></div>
+		<div class="popular"><p>Popular</p></div>
+	</div>
+	<div class="button-div">
+		<button class="follow-button">Follow</button>
+	</div>
+</div>
+10.b<div class="container">
+	<div class="profile-div">
+		<img class="profile-photo" src="../thumbnails/cute-cat.jpg">
+	</div>
+	<div class="profile-note">
+		<div class="name"><p>Jaamacadley</p></div>
+		<div class="animal"><p>sleepy cat</p></div>
+		<div class="popular"><p>Popular</p></div>
+	</div>
+	<div class="button-div">
+		<button class="follow-button">Follow</button>
+	</div>
+	<div class="container">
+	<div class="profile-div">
+		<img class="profile-photo" src="../thumbnails/cat.jpg">
+	</div>
+	<div class="profile-note">
+		<div class="name"><p>Omar</p></div>
+		<div class="animal"><p>the cat</p></div>
+		<div class="popular"><p>Popular</p></div>
+	</div>
+	<div class="button-div">
+		<button class="follow-button">Follow</button>
+	</div>
+</div>
+<div class="container">
+	<div class="profile-div">
+		<img class="profile-photo" src="../thumbnails/penguin.jpg">
+	</div>
+	<div class="profile-note">
+		<div class="name"><p>Alia</p></div>
+		<div class="animal"><p>the penguin</p></div>
+		<div class="popular"><p>Popular</p></div>
+	</div>
+	<div class="button-div">
+		<button class="follow-button">Follow</button>
+	</div>
+</div>
+<hr>
+<center><p>lesson 11 exercise</p></center>
+<p>11d.</p>
+<div class="page-grid">
+	<div class="profile-divv">
+		<img class="profile-picture" src="../thumbnails/john.jfif">
+		<p class="name">James</p>
+		<div class="mutual-friends-row">
+			<img class="mutual-friend-picture" src="../thumbnails/cute-cat.jpg">
+			<p class="mutual-friends">5 mutual friends</p>
+		</div>
+		<div>
+			<button class="add-friend">Add friend</button>
+		</div>
+	</div>
+	<div class="profile-divv">
+		<img class="profile-picture" src="../thumbnails/cute-cat.jpg">
+		<p class="name">Eliza</p>
+		<div class="mutual-friends-row">
+			<img class="mutual-friend-picture" src="../channel-pictures/channel-3.jpeg">
+			<p class="mutual-friends">12 mutual friends</p>
+		</div>
+		<div>
+			<button class="add-friend">Add friend</button>
+		</div>
+	</div>
+	<div class="profile-divv">
+		<img class="profile-picture" src="../thumbnails/Rex.jpg">
+		<p class="name">Osama</p>
+		<div class="mutual-friends-row">
+			<img class="mutual-friend-picture" src="../channel-pictures/channel-6.jpeg">
+			<p class="mutual-friends">7 mutual friends</p>
+		</div>
+		<div>
+			<button class="add-friend">Add friend</button>
+		</div>
+	</div>
+</div>
+<center><p>lesson 12 exercise</p></center>
+<p>12e.</p>
+<div class="container-flexbox">
+	<div class="flexbox">
+		<div>Home</div>
+		<div class="notifications">14</div>
+	</div>
+	<div class="flexbox">
+		<div>Notifications</div>
+		<div class="notifications">3</div>
+	</div>
+	<div class="flexbox">
+		<div>Message</div>
+		<div class="notifications">5</div>
+	</div>
+</div>
+<p>12f.</p>
+<div class="div-header">
+	<div class="home-link">Home</div>
+	<div>
+		<input class="text-box" type="text" placeholder="Search">
+	</div>
+	<div><button class="download-button">Download</button></div>
+</div>
+</body>
+</html>

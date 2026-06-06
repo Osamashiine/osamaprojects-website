@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercises</title>
+</head>
+<body>
+	
+<p style="text-align:center;">
+	<u>lesson1 exercise</u>
+</p>
+1.a <button>click </button>
+1.b <button> Osama Ahmed Ali </button> <button>pasta</button>
+1.c <p> Hello, world</p> 
+1.d <p>Today i went to the university</p>
+1.e <a href="https://www.google.com/" target="_blank">search with google</a>
+<p>
+<a href="https://www.amazon.com/"> Back to Amazon</a>
+<p>Nike Black Running Shoes</p>
+<p>$39-in stock</p>
+<p>Free delivery tomorrow</p>
+<button>Add to cart </button> <button>Buy now</button>
+</p>
+<hr>
+<style>
+	.company {
+		color:white;
+		background-color: rgb(0, 65, 150);
+		border: none;
+		height: 30px;
+		width: 190px;
+		border-radius:15px;
+		margin-right: 6px;
+		cursor: pointer;
+	}
+	.company:hover {
+		background-color: rgb(0, 30, 110);
+	}
+	.save {
+		color:rgb(0, 65, 150);
+		background-color: white;
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgb(0, 65, 150);
+		height: 30px;
+		width: 70px;
+		border-radius: 15px;
+		cursor: pointer;
+		transition:background-color 0.15border-widith;
+	}
+	.save:hover {
+		background-color: rgb(240, 248, 255);
+		border-width: 2px;
+	}
+	.request{
+		background-color:black;
+		color: white;
+		border: none;
+		font-size: 16px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-right: 25px;
+		padding-left: 25px;
+		cursor: pointer;
+		margin-right: 20px;
+	}
+	.request:hover{
+		opacity:0.9;
+	}
+	.back{
+		padding-top:8px;
+		padding-bottom:8px;
+		font-size: 15px;
+		margin-right: 8px;
+	}
+	.search-result{
+		margin-right: 4px;
+		margin-left: 4px;
+		font-size: 18px;
+	}
+	.next{
+		padding-top:8px;
+		padding-bottom:8px;
+		font-size: 15px;
+		margin-left: 8px;
+	}
+	.strech{
+		background-color: green;
+		color:white;
+		font-size: 18px;
+		border:none;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 15px;
+		padding-left: 15px;
+		cursor: pointer;
+		transition: padding-top 1s,
+		padding-bottom 1s,padding-left 1s,
+		padding-right 1s;
+	}
+	.strech:hover{
+		padding-top: 18px;
+		padding-bottom: 18px;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	.shadow{
+		background-color: green;
+		color: white;
+		border: none;
+		font-size: 18px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 15px;
+		padding-left: 15px;
+		cursor: pointer;
+		box-shadow:3px 3px 6px rgba(0, 0, 0,0.4);
+	}
+	.shadow:active{
+		margin-top: 3px;
+		margin-left: 3px;
+		box-shadow:none;
+	}
+	.together{
+		background-color: green;
+		color: white;
+		border: none;
+		font-size: 18px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: 10px;
+		margin-left: 10px;
+		cursor: pointer;
+		transition: padding 0.15s,margin 0.15s;
+	}
+	.together:hover{
+		padding-right: 25px;
+		padding-left: 25px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.tahoma {
+		font-family: Tahoma;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.year{
+		font-family: arial;
+		font-size: 20px;
+		font-weight: bold;
+		width: 250px;
+		line-height: 25px;
+	}
+	.sales{
+		font-size: 18px;
+		color: red;
+		font-weight: normal;
+		font-style: italic;
+	}
+	.title {
+		font-family: arial;
+		font-size: 28px;
+		font-weight: bold;
+		margin-bottom:20px;
+		text-align: center;
+}
+	.subtitle{
+		font-family: times new roman;
+		font-size: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.link {
+		text-align: center;
+		color:rgb(58, 108, 199);
+		cursor: pointer;
+	}
+	.new{
+		font-family: arial;
+		color:red;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.pro {
+		font-family: arial;
+		font-size: 24px;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.pros {
+		font-family: arial;
+		font-weight: bold;
+		font-size: 45px;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 15px;
+
+	}
+	.cash {
+		font-family: arial;
+		font-size: 18px;
+		color: rgb(96, 96, 96);
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 25px;
+	}
+	.buy {
+		background-color: rgb(0,113,227);
+		color: white;
+		border: none;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		padding-right: 15px;
+		padding-left: 15px;
+		border-radius: 30px;
+		margin-top: 0px;
+		
+		
+	}
+	.first{
+		width: 250px;
+		border-radius: 15px;
+	}
+	.sec {
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+		object-position:center;
+	}
+	.third {
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
+		object-fit: cover;
+		object-position: center;
+	}
+	.round{
+		border-radius: 8px;
+		font-size: 18px;
+		border-width: 1px;
+		border-color: rgb(200,200,200);
+		border-style: solid;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.withshadow {
+		display: block;
+		font-size: 15px;
+		width: 500px;
+		padding-top: 12px;
+		padding-bottom:12px;
+		padding-left: 16px;
+		padding-right: 16px;
+		border: none;
+		border-radius: 30px;
+		box-shadow: 0px 1px 6px rgba(0,0, 0, 0.25);
+		margin-bottom: 30px;
+	}
+	.label {
+		font-family: arial;
+		color: rgb(100,100,100);
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.email-box{
+		font-size: 16px;
+		width: 400px;
+		padding-top: 7px;
+		padding-bottom:7px ;
+		border-radius: 5px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: rgb(100,100,100);
+		margin-bottom: 20px;
+	}
+	.note{
+		font-family: arial;
+		font-size: 16px;
+		color:rgb(100,100,100);
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	.agree-button {
+		background-color:rgb(10,102,194);
+		color: white;
+		font-size: 20px;
+		border:none;
+		width: 400px;
+		padding-top: 18px;
+		padding-bottom: 18px;
+		border-radius: 32px;
+		margin-bottom: 30px;
+	}
+	.profile-photo {
+		width: 50px;
+		height: 50px;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 25px;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+	.text-box {
+		border:none;
+		font-size: 18px;
+		width: 300px;
+		vertical-align: middle;
+
+	}
+	.tweet-button {
+		background-color:rgb(29,155,240);
+		color: white;
+		border:none;
+		font-weight: bold;
+		font-size: 16px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 16px;
+		padding-left: 16px;
+		border-radius: 18px;
+		vertical-align: middle;
+	}
+	.on {
+		display: block;
+	}
+	.supressing {
+		width: 210px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.google {
+		width: 200px;
+		margin-bottom: 10px;
+		margin-left: 150px;
+		display: block;
+
+	}
+	.request-ride{
+		font-family: arial;
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+    .pickup,.destination {
+    	display: block;
+    	width:400px;
+       background-color:rgb(240,240,240);
+       border: none ;
+       padding-top: 15px;
+       padding-bottom: 15px;
+       padding-right: 20px;
+       padding-left: 20px;
+       margin-bottom: 10px;
+       font-size: 16px;
+   }
+     .destination {
+       margin-bottom: 35px;
+     }
+     .schedule-button{
+ 	    background-color:rgb(240,240,240);
+ 	    color: black;
+			border: none;
+			font-size: 18px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-right: 25px;
+			padding-left: 25px;
+			cursor: pointer;
+			margin-right: 20px;
+	}
+	.red-square {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+	}
+	.green-circle {
+		width: 100px;
+		height: 100px;
+		background-color: green;
+		border-radius: 50px;
+	}
+	.card {
+		width: 300px;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		padding-left: 15px;
+		padding-bottom: 20px;
+	}
+	.youtube-music {
+		width: 360px;
+		background-color: rgb(33,33,33);
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.install {
+		font-family: arial;
+		font-size: 24px;
+		font-weight: bold;
+		color: white;
+		margin-bottom: 10px;
+	}
+	.add-music {
+		font-family: arial;
+		color: rgb(160,160,160);
+	}
+	.card-shadow {
+		box-shadow: 0px 0px 6px rgba(0, 0, 0,0.3);
+		width: 500px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-right: 12px;
+		padding-left: 12px;
+		border-radius: 6px;
+		margin-bottom: 10px;
+	}
+	.div-profile{
+		display: inline-block;
+		width: 200px;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+
+		margin-left: 5px;
+	}
+	.oliver-page {
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+		object-position: center;
+		margin-bottom: 12px;
+	}
+	.oliver {
+		font-family: arial;
+		font-weight: bold;
+		font-size: 18px;
+		margin-left: 8px;
+		margin-top: 0px;
+		margin-bottom: 4px;
+
+	}
+	.mutual-friends {
+		font-family: arial;
+		color: rgb(100, 100, 100);
+		margin-left: 8px;
+		margin-top: 0px;
+		margin-bottom: 12px;
+	}
+	.add-friend {
+		background-color: rgb(24,119,242);
+		border: none;
+		color: white;
+		font-size: 16px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-radius: 4px;
+		margin-left: 8px;
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+	.google-front {
+		text-align: center;
+	}
+	.google-logo {
+		display: block;
+		width: 200px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.google-search {
+		background-color: rgb(245, 245, 245);
+		border: none;
+		font-size: 15px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-right: 10px;
+		margin-bottom: 20px;
+
+	}
+	.grid-two-column {
+		display: grid;
+		grid-template-columns: 200px 75px;
+	}
+	.grid-three-column{
+		display: grid;
+		grid-template-columns: 50px 1fr 75px;
+	}
+	.grid-four-column {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		column-gap: 20px;
+		row-gap: 10px;
+	}
+	.flexbox-two-items {
+		display: flex;
+		flex-direction: row;
+	}
+	.flexbox-three-items {
+		display: flex;
+		flex-direction: row;
+	}
+	.flexbox-four-items {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.flexbox-with-border {
+		height: 50px;
+		border-width: 1px;
+		border-style: solid;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+</style>
+<p><center><u>lesson2 exercises & lesson3 exercise</u></center></p> <br>
+2/3.a <button class="company">Apply on company website</button>
+<button class="save">Save</button><br>
+<br>
+2/3.b <button class="request">Request now</button><br><br>
+<hr>
+<p><center><u>lesson4 exercises</u></center></p> <br>
+<p>I answered 4.a to 4.f exercises in buttons.html</p>
+<p>4h. pagination</p>
+<button class="back">Back</button>
+<a class="search-result" href="https://www.google.com/">1</a>
+<a class="search-result"href="https://www.facebook.com/">2</a>
+<a class="search-result"href="https://www.youtube.com/">3</a>
+<a class="search-result"href="https://www.amazon.com/">4</a>
+<a class="search-result"href="https://www.alibaba.com/">5</a>
+<button class="next">Next</button>
+<p>4.i Strech</p>
+<button class="strech">Strech</button>
+<p>4.j 3D click</p>
+<button class="shadow">Shadow</button>
+<p>4.k Margin & padding together</p>
+<button class="together">One</button>
+<button class="together">Two</button>
+<button class="together">Three</button>
+<p></p>
+<hr>
+<p>
+<center><u>lesson5 exercise</u></center>
+</p>
+<p>5a. font=Tahoma</p>
+<p class="tahoma">This is Tahoma Font</p>
+<p>5a. font=Arial</p>
+<p class="year">Biggest Deals of the Year&#33; <span class="sales">Sales and Tuesday</span></p>
+<p>5a.c font=Arial</p>
+<p class="title">
+	Shopping for your business&#63;
+</p>
+<p class="subtitle">
+	See how Apple at work can help
+</p>
+<p class="link">
+	learn more &#62; 
+</p>
+<hr>
+<p>5.d </p>
+<p class="new">New</p>
+<p class="pro">MacBook Pro</p>
+<p class="pros">Suprcharged for pros.</p>
+<p class="cash">from $1999 </p>
+<center><button class="buy">Buy</button></center><br>
+<hr>
+<p>lesson6 exercise</p>
+<p>i answered  a,b,c questions </p>
+<p>6d.use html file and css file separately</p>
+<hr>
+<p><center>lesson7 exercise</center></p><br>
+7.a<img class="first" src="../thumbnails/cat.jpg">
+<p>7.b</p><img class="sec" src="../thumbnails/cat.jpg">
+<p>7.c</p><img class="third" src="../thumbnails/cat.jpg">
+<p>7.d</p><input class="round" type="text" placeholder="Search">
+<p>7.e</p><input class="withshadow" type="t ext" placeholder="search Google or type a URL">
+<p>7.f</p>
+<center><p class="label">Email</p>
+<input class="email-box" type="text">
+<p class="note">By clicking Agree & Join, you agree to the Privacy p
+Policy.</p>
+<button class="agree-button">Agree & Join</button></center>
+<p>7.g</p>
+<img class="profile-photo" src="../thumbnails/cat.jpg">
+<input class="text-box" type="text" placeholder="What's happening?">
+<button class="tweet-button">Tweet</button>
+<hr>
+<p><center>lesson8 exercise</center> </p>
+<p>8.a</p>
+<input class="on" type="text" placeholder="Name">
+<input class="on" type="text" placeholder="Email">
+<p>8.b</p>
+<p class="supressing" >Thanks for chatting with our customer support.would you like to take our quick suvey?</p>
+<button>Yes</button>
+<button>No</button>
+<p>8.c</p>
+<img class="google" src="../thumbnails/google logo.png">
+<input class="withshadow" type="t ext" placeholder="search Google or type a URL">
+<p>8.d</p>
+<p class="request-ride">Request a ride now</p>
+<input class="pickup" type="text" placeholder="Enter pickup location">
+<input class="destination" type="text" placeholder="Enter destination">
+<button class="request">Request now</button>
+<button class="schedule-button">Schedule for later</button>
+<hr>
+<p><center>lesson9 exercise</center></p>
+<p>9.a</p>
+<div class="red-square"></div>
+<p>9.b</p>
+<div class="green-circle"></div>
+<p>9.c</p>
+<div class="card">
+	<p style="font-family: arial;">satisfied with our service?</p>
+	<button>yes</button>
+	<button>No</button>
+</div>
+<p>9.d</p>
+<div class="youtube-music">
+	<p class="install">Install Youtube Music</p>
+	<p class="add-music">Add Youtube Music to your desktop for quick and easy access </p>
+</div>
+<p>9.e</p>
+<div class="card-shadow">
+	<img class="profile-photo" src="../thumbnails/cat.jpg">
+	<input class="text-box" type="text" placeholder="What's happening?">
+<button class="tweet-button">Tweet</button>
+</div>
+<p>9.f</p>
+<div class="div-profile">
+<img class="oliver-page" src="../thumbnails/cat.jpg">
+<p class="oliver">Oliver</p>
+<p class="mutual-friends">2 mutual friends</p>
+<button class="add-friend">Add friend</button>
+</div>
+<p>9.f</p>
+<div class="div-profile">
+<img class="oliver-page" src="../thumbnails/john.jfif">
+<p class="oliver">Omar</p>
+<p class="mutual-friends">16 mutual friends</p>
+<button class="add-friend">Add friend</button>
+</div>
+<div class="div-profile">
+<img class="oliver-page" src="../thumbnails/mimi.jpg">
+<p class="oliver">Mimi</p>
+<p class="mutual-friends">2 mutual friends</p>
+<button class="add-friend">Add friend</button>
+</div>
+<div class="div-profile">
+<img class="oliver-page" src="../thumbnails/Rex.jpg">
+<p class="oliver">Rex</p>
+<p class="mutual-friends">2 mutual friends</p>
+<button class="add-friend">Add friend</button>
+</div>
+<p>9.h</p>
+<div class="google-front">
+<center> 
+	<img class="google-logo" src="../thumbnails/google logo.png">
+ <input class="withshadow" type="t ext" placeholder="search Google or type a URL">
+</center>
+<button class="google-search ">Google Search</button>
+<button class="google-search">I'm Feeling Lucky</button>
+</div>
+<hr>
+<center><p>lesson 11 exercise</p></center>
+<p>11a. </p>
+<div class="grid-two-column">
+	<div style="background-color: lightblue;">200px</div>
+	<div style="background-color: violet;">75px</div>
+</div>
+<p>11b. </p>
+<div class="grid-three-column">
+	<div style="background-color: lightblue;">col1</div>
+	<div style="background-color: violet;">col2</div>
+	<div style="background-color: lightblue;">col3</div>
+</div>
+<p>11c.</p>
+<div class="grid-four-column">
+	<div style="background-color: violet;">col1</div>
+	<div style="background-color: violet;">col2</div>
+	<div style="background-color: violet;">col3</div>
+	<div style="background-color: violet;">col4</div>
+	<div style="background-color: violet;">col1</div>
+	<div style="background-color: violet;">col2</div>
+	<div style="background-color: violet;">col3</div>
+	<div style="background-color: violet;">col4</div>
+</div>
+<hr>
+<center><p>lesson 12 exercise</p></center>
+<p>12a.</p>
+<div class="flexbox-two-items">
+	<div style="
+	background-color:lightblue;
+	width: 200px;">200px
+</div>
+	<div style="background-color:lightpink;
+	width: 75px;">75px</div>
+</div>
+<p>12b.</p>
+<div class="flexbox-three-items">
+	<div style="
+		background-color:lightblue;
+		width: 50px;">50px
+	</div>
+		<div style="background-color:lightpink;
+		flex: 1;">flex 1</div>
+		<div style="
+		background-color:lightblue;
+		width: 75px;">75px
+	</div>
+</div> 
+<p>12c.</p>
+<div class="flexbox-four-items">
+	<div style="
+		background-color:lightblue;
+">item1
+	</div>
+		<div style="background-color:lightblue;
+	">item2</div>
+		<div style="
+		background-color:lightblue;
+">item3
+	</div>
+	<div style="
+		background-color:lightblue;
+">item4
+	</div>
+</div>
+<p>12d.</p>
+<div class="flexbox-with-border">
+	<div style="
+	background-color:lightblue;
+">item3
+	</div>
+	<div style="
+	background-color:lightblue;
+">item4
+	</div>
+</div>
+</body>
+</html>
