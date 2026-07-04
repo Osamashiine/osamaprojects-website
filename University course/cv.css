@@ -1,10 +1,9 @@
 :root {
-    --bg-dark: #09090b;            /* Deepest Black */
-    --card-bg: #18181b;            /* Zinc Dark Gray Block */
-    --border-color: #27272a;       /* Zinc Border Lines */
-    --accent-emerald: #10b981;     /* Fresh Electric Mint */
-    --text-white: #fafafa;         
-    --text-muted: #a1a1aa;         
+    --primary-color: #0f172a;       /* Deep Corporate Blue */
+    --accent-gold: #d97706;         /* Sophisticated Amber/Gold */
+    --text-dark: #1e293b;           /* Rich slate text */
+    --text-muted: #64748b;          /* Professional secondary gray */
+    --bg-page: #f8fafc;             /* Elegant bright layout canvas */
 }
 
 * {
@@ -15,76 +14,72 @@
 }
 
 body {
-    background: var(--bg-dark);
-    color: var(--text-white);
-    padding: 50px 20px;
+    background: var(--bg-page);
+    padding: 40px 20px;
 }
 
 .cv-container {
     display: flex;
     max-width: 950px;
     margin: auto;
-    background: transparent; /* Card separation handles formatting */
-    gap: 20px;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06); 
+    border-radius: 8px; 
+    overflow: visible;
 }
 
 .left-sidebar {
     width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Separates the components like a grid layout */
-}
-
-/* Transforms your basic sidebar wrappers into floating grid panels */
-.profile-section, .sidebar-block {
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    padding: 30px 24px;
-    border-radius: 16px;
+    background: var(--primary-color);
+    color: #e2e8f0;
+    padding: 40px 25px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .profile-section {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 2px solid var(--border-color);
+    border: 3px solid var(--accent-gold); 
 }
 
 .candidate-name {
     font-size: 1.25rem;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    color: #fff;
 }
 
 .candidate-title {
     font-size: 0.85rem;
-    color: var(--accent-emerald);
+    color: var(--accent-gold);
     font-weight: 500;
-    margin-top: 4px;
+}
+
+.sidebar-block {
+    margin-bottom: 30px;
 }
 
 .sidebar-block h3 {
-    font-size: 0.8rem;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-muted);
-    margin-bottom: 15px;
-}
-
-.contact-list {
-    list-style: none;
+    letter-spacing: 1px;
+    color: #fff; 
+    border-bottom: 2px solid var(--accent-gold);
+    padding-bottom: 4px;
 }
 
 .contact-list li {
     font-size: 0.85rem;
     margin-bottom: 10px;
-    color: #e4e4e7;
 }
 
 .skills-list, .languages-list {
@@ -95,72 +90,49 @@ body {
 }
 
 .skills-list li, .languages-list li {
-    background: #27272a; 
-    padding: 6px 12px;
-    border-radius: 8px;
-    font-size: 0.75rem;
-    color: var(--text-white);
-    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.08); 
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Beautiful right column card wrapper */
 .main-content {
     width: 65%;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    padding: 45px;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    padding: 40px 45px;
+    color: var(--text-dark);
 }
 
 .main-content section {
-    margin-bottom: 0; /* Handled perfectly by flex gap spacing */
+    margin-bottom: 35px;
 }
 
 .main-content h2 {
-    color: var(--text-white);
-    font-size: 1.15rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: var(--primary-color); 
+    border-bottom: 2px solid var(--accent-gold);
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-/* Modern terminal tag line decoration prefix */
-.main-content h2::before {
-    content: '';
-    display: inline-block;
-    width: 4px;
-    height: 16px;
-    background: var(--accent-emerald);
-    border-radius: 2px;
+    padding-bottom: 6px;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .summary-section p {
     font-size: 0.95rem;
-    line-height: 1.7;
-    color: #d4d4d8;
+    line-height: 1.6;
 }
 
 .timeline-item {
     display: flex;
     margin-bottom: 20px;
-    background: #222225;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.02);
+    align-items: flex-start;
 }
 
 .time-meta {
     width: 25%; 
     font-size: 0.85rem;
     font-weight: 700;
-    color: var(--accent-emerald);
+    color: var(--accent-gold);
 }
 
 .time-details {
@@ -168,18 +140,19 @@ body {
 }
 
 .time-details h3 {
-    font-size: 1.05rem;
-    color: var(--text-white);
+    font-size: 1.1rem;
+    color: var(--primary-color);
 }
 
 .institution {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
 }
 
 @media (max-width: 768px) {
-    .cv-container { flex-direction: column; gap: 15px; }
-    .left-sidebar, .main-content { width: 100%; }
-    .main-content { padding: 30px 20px; }
-    .timeline-item { flex-direction: column; gap: 4px; }
+    .cv-container { flex-direction: column; }
+    .left-sidebar, .main-content { width: 100%; padding: 30px 20px; }
+    .left-sidebar { border-radius: 8px 8px 0 0; }
+    .timeline-item { flex-direction: column; }
+    .time-meta { margin-bottom: 4px; }
 }
